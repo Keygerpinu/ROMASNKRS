@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROMA SNKRS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #111;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+    }
+    nav a:hover {
+      background: #fff;
+      color: #000;
+      border-radius: 5px;
+    }
+    .banner {
+      height: 500px;
+      background: url('banner.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+    .banner::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .banner-text {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      color: #fff;
+      z-index: 1;
+    }
+    .banner-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .banner-text p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ROMA SNKRS</header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="nosotros.html">Nosotros</a>
+  </nav>
+
+  <div class="banner">
+    <div class="banner-text">
+      <h2>Estilo que impone</h2>
+      <p>Moda urbana directa a tu puerta</p>
+    </div>
+  </div>
+
+</body>
+</html>
